@@ -1,0 +1,117 @@
+<!doctype html>
+<script laguage="JavaScript">
+   function msg(){
+      alert("ようこそ！片岡みわのホームページへ")
+   }
+</script>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <title>片岡みわのホームページ</title>
+      <style>
+         h1 {
+            color: pink;
+            background-color: #4abdac;
+            padding: 32px;
+            text-shadow: -10px -10px 4px lightblue;
+            font-size: 64px;
+            text-align: center;
+         }
+         h2 {
+            color: darkgreen;
+            border-left-width: 8px;
+            border-left-style: solid;
+            border-left-color: #4abdac;
+            border-left: 15px solid yellowgreen;
+            padding-left: 8px;
+            margin-top: 32px;
+         }
+         img{
+            border-width: 4px;
+            border-style: solid;
+            border-color: lightblue;
+            border-left: 15px solid yellowgreen;
+            width: 40%;
+            height: 40%;
+            border-radius: 400px/200px;
+            
+         }
+         main{
+            margin: 16px;
+         }
+         .ikuji {
+            color: rgb(0, 0, 255);
+         }
+         .cat {
+            color: cornsilk;
+            background-color: red;
+         }
+         .pictures {
+            background-color: black;
+         }
+         .ikuji,.cat{
+            font-size: 20px;
+         }
+         .food li{
+            color:blueviolet;
+         }
+         a {
+            color: lawngreen;
+            font-size: 15px;
+         }
+      </style>
+   </head>
+   
+<h1 onMouseover="msg()">片岡みわのホームページ</h1>
+<main>
+   <a href="https://test">
+      <img src="https://i.imgur.com/HIxTKbe.jpg" onmouseover="this.src='https://i.imgur.com/pAQ7QKc.jpg'" onmouseout="this.src='https://i.imgur.com/HIxTKbe.jpg'" />
+   </a>
+<h2>人物紹介</h2>
+<p>
+   こんにちは。<br>
+   電通大100周年記念キャンパスの2Fの<a href="http://marutsu.co.jp">マルツエレック</a>西東京営業所で働いている 片岡と申します。趣味は今は特にないです。<br>
+   子供三人の<span class="ikuji">育児</span>中です。<br>
+   <span class="cat">猫</span>が好きです。よろしくお願いします！
+</p>
+<h2>サイト紹介</h2>
+<p>電気通信大学プログラミング教室のwebサイトは<a href="https://www.uec-programming.com">こちら</a>！！</p>
+<h2>最近知った言葉</h2>
+<p>href属性　エイチレフぞくせい<br>
+   ENIAC エニヤック(ｴﾆｬｯｸ)<br>
+   EDSAC エドサック<br>
+</p>
+<h2>好きな食べ物</h2>
+<ul class="food">
+   <li>チョコレート</li>
+   <li>生クリーム</li>
+   <li>フルーツ</li>
+   <li>ケーキ・パフェなど</li>
+</ul>
+<h2>おすすめ小説ランキング</h2>
+<ol>
+   <li>竹内久美子著　ワニはいかにして愛を語り合うか、浮気人類進化論 他</li>
+   <li>小川一水著　復活の地</li>
+   <LI>沖方丁著　マルドゥック・スクランブル</LI>
+   <LI>星新一著　ボッコちゃん　他</LI>
+</ol>
+<div class="pictures">
+<h2>写真</h2>
+<img src="https://i.imgur.com/HIxTKbe.jpg" alt="東京タワーから見た夜景"/>
+<img src="https://i.imgur.com/pAQ7QKc.jpg" alt="高尾山から見た朝焼け" />
+</div>
+<h2>お問い合わせ</h2>
+<form action="http://soasa.starfree.jp/form.php">
+   名前：<input type="text" name="name" placeholder="でんつうたろう">
+   <br>
+   <input type="radio" name="animal" value="cat" /> 猫派
+   <input type="radio" name="animal" value="other" />その他
+   <br>
+   <input type="checkbox" name="ikuji"/>育児経験がある
+   <br>
+   <textarea name="comment"></textarea>
+   <br>
+   <input type="submit" value="送信する" />
+</form>
+</main>
+</html>
